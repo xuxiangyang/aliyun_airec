@@ -41,7 +41,7 @@ module AliyunAirec
     end
 
     def roa_client
-      @roa_client ||= ROAClient.new(endpoint: "http://#{endpoint}", api_version: "2018-10-12", access_key_id: access_key_id, access_key_secret: access_key_secret)
+      @roa_client ||= ROAClient.new(endpoint: "https://#{endpoint}", api_version: "2018-10-12", access_key_id: access_key_id, access_key_secret: access_key_secret)
     end
   end
 end
