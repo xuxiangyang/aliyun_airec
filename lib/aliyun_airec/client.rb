@@ -32,7 +32,7 @@ module AliyunAirec
           "UserId" => user_id,
           "Ip" => ip,
           "Imei" => imei,
-        },
+        }.reject { |_, v| v.nil? },
         headers: {
           "content-type" => "application/json",
         },
